@@ -4,27 +4,27 @@
     <meta charset="utf-8">
     <title>Ejercicio Fruteria</title>
     <style type="text/css">
-    img{
+    img{ /* Estilo de la imagen*/
       width: 99.9%;
     }
     </style>
   </head>
   <body >
-    <img src="fruta.jpg">
-    <h3> Lista de Frutas </h3>
-    <p>
+  <img src="fruta.jpg">   <!-- Imagen de frutas -->
+    <h3> Lista de Frutas </h3> <!-- Titulo  -->
+    <p> <!--Párrafo con información del ejercicio  -->
       <strong> Frutas Master </strong>es una empresa de tercera generación que se dedica a la compra, venta y distribución de frutas al por mayor. </br>
       En la actualidad, somos la empresa líder en el servicio de distribución de frutas.
+      <!--Etiqueta <strong> para resaltar texto en negritas  -->
     </p>
     <strong>Cátalogo</strong>
-    <ol>
-      <li>prueba</li>
-
+    <ol id="lista"><!-- Definición de la lista que contendrá los elementos(frutas) correspondientes introducidos por el usuario -->
+      <!-- se define el id = lista para poder manipular los elementos desde el archivo .js-->
     </ol>
-    <input type="text" placeholder="fruta" id="fruta"/>
-    <input type="submit" value="Agregar" onclick="agregarFruta();"/>
-
-
-    <script src="/assets/js/javascript.js"></script>
+    <input type="text" placeholder="fruta" id="fruta"/> <!--Se declara la caja de texto para introducir el nombre de la fruta  -->
+    <input type="submit" value="Agregar" onclick="agregarFruta();"/><!-- Se declara el boton enviar que manda llamar a la función agregarFruta del archivo .js -->
+    <!--Ambos elementos <input> tienen id´s para poder ser manipulados desde el .js  -->
+    <script src="assets/js/javascript.js"></script> <!--Se manda a llamar el script que contiene la funcionalidad  -->
   </body>
 </html>
+<!--  -->
